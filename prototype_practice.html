@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prototype Practice</title>
+</head>
+<body>
+
+    <script>
+        function sumNum(a,b)
+        {
+            this.x = a;
+            this.y = b;
+            this.sum = function()
+            {
+                return (this.x + this.y);
+            }
+        }
+
+        function prodNum(a,b)
+        {
+            this.x = a;
+            this.y = b;
+            this.prod = function()
+            {
+                return (this.x * this.y);
+            }
+        }
+
+        sumNum.prototype = new prodNum();
+        var summation = new sumNum(100,200);
+        document.write(summation.sum())
+
+        console.log(summation.prod())
+        document.write(summation.prod())
+    </script>
+    
+</body>
+</html>

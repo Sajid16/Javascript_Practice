@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Public and Private Method Practice</title>
+</head>
+
+<body>
+
+    <script>
+        function result(a)
+        {
+            //private portion and this can not be able to accessed by object instance
+            var x = 100;
+            total = function()
+            {
+                return x+a;
+            }
+
+            //make the above part public to access through its instance in public
+            this.sum = function()
+            {
+                return this.t = total();
+            }
+        }
+
+        var r = new result(200);
+        console.log(r.sum());
+        document.write(r.sum());
+        
+    </script>
+
+</body>
+
+</html>

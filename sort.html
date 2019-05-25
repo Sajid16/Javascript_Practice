@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sorting of Numbers</title>
+</head>
+
+<body>
+    <script>
+        // alert("you are here")
+        var num = [10, 1020, 50, 30, 40, 60,0,-100,20,-101];
+        // num[-1] = 0;
+        var result = [];
+        var l = num.length;
+        var temp;
+        // console.log(l)
+        document.write("length of array is:" + l);
+        document.write("<br>")
+        for (i = 0; i < l; i++) {
+            for (j = i+1; j < l; j++) {
+                // var test = num[i];
+                if (num[i] > num[j]) {
+                    temp = num[i];
+                    num[i] = num[j];
+                    num[j] = temp;
+                }
+            }
+        }
+
+        for (i = 0; i < l; i++) {
+            document.write(num[i] + '<br>')
+        }
+    </script>
+
+</body>
+
+</html>

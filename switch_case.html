@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Switch case practice</title>
+</head>
+
+<body>
+
+    <div id="result"></div>
+
+    <input type="text" id="condition">
+    <button onclick="checkFunction()">Show result</button>
+
+
+    <script>
+        function checkFunction() {
+            var text;
+            var con = document.getElementById("condition").value;
+            switch (con) {
+                case "python":
+                    text = "It is really awesome";
+                    break;
+                case "php":
+                    text = "it may be awesome";
+                    break;
+                default:
+                    text = "It is really unknown and awesome also";
+            }
+            document.getElementById("result").innerHTML = text;
+        }
+        
+    </script>
+
+</body>
+
+</html>
