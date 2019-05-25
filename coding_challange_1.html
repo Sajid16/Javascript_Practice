@@ -1,0 +1,31 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coding Challange in JavaScript</title>
+</head>
+
+<body>
+    <script>
+        alert("you are working on coding challange of JavaScript");
+        var john_mass, john_height, mark_mass, mark_height,johnBmi, markBmi;
+        var calculatedBmi;
+
+        john_mass = 65;
+        mark_mass = 69;
+        john_height = 1.65;
+        mark_height = 1.69;
+        johnBmi = john_mass / (john_height * john_height);
+        markBmi = mark_mass / (mark_height * mark_height);
+        console.log(johnBmi)
+        console.log(markBmi)
+
+        calculatedBmi = johnBmi < markBmi;
+
+        console.log("Is mark's BMI highrt than John's?" + calculatedBmi)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Practice</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<section class="container">	
+		<div class="header">
+			
+			<h2>JavaScript Fundamental Practice</h2>
+
+		</div>
+	</section>
+	<section class="container">	
+		<div class="main-content">
+
+			<div id="show">
+				
+			</div>
+			
+			<script type="text/javascript">
+			
+				// var arr1 = [1,2,3,4,5,6];
+				// document.write(arr1[5]);
+				arr1 = [1,2,1020,3,4,5,6];
+				arr2 = [5,6,7,8,9];
+
+				// getarr = arr2.concat(arr1);
+				// document.write(getarr);
+				// document.write("<br/>");
+
+				// var color1 = ["red","green","blue","orange"];
+				// var color2 = ["black","white","purple","cyan"];
+
+				// result = color1.concat(color2);
+				// document.write(result);
+				// document.write("<br/>");
+				// result = result.sort();
+				// document.write(result);
+
+				var result = arr1.concat(arr2);
+				var len = result.length;
+				function arrsort(x,y)
+				{
+					return (x-y);
+				}
+				result = result.sort(arrsort);
+				document.write(len);
+				document.write("</br>");
+				document.write(result);
+				document.write("</br>");
+
+				function arrsort2(x,y)
+				{
+					return (y-x);
+				}
+				result = result.sort(arrsort2);
+				document.write(result);
+
+			</script>
+
+		</div>
+	</section>
+	<section class="container">	
+		<div class="footer">
+			
+			<h2>Syed Sajid Mahboob</h2>
+
+		</div>
+	</section>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
