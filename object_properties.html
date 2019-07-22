@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Object And Properties</title>
+</head>
+<body>
+
+    <script>
+        //direct declared object
+        var sajid = {
+            firstName : 'Syed',
+            lastName : 'Sajid mahboob',
+            birthyear : 1993,
+            family: ['john','jane','mark','bob'],
+            job:'web developer',
+            isMarried: false,
+            calcAge: function(){
+                this.age = 2019 - this.birthyear;
+            }
+        };
+        sajid.calcAge();
+        console.log(sajid);
+
+        document.write(sajid.firstName+" "+sajid['lastName']+"<br>");
+        var birth = 'birthyear';
+        var age = 2019 - sajid[birth];
+        document.write("his age is "+age+" years old");
+
+        //object declared with new keyword syntax
+        var jane = new Object();
+        jane.firstName = 'jane';
+        jane.birthyear = 1989;
+        jane['lastName'] = 'smith';
+
+        console.log(jane);
+    </script>
+    
+</body>
+</html>

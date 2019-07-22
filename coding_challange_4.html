@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coding Challange-4</title>
+</head>
+<body>
+    <script>
+        var mark = {
+            name:'mark',
+            mass:75,
+            height:1.5,
+            caclBMI : function(){
+                this.markBMI = this.mass/(this.height*this.height);
+            }
+        };
+
+        var john ={
+            name:'John',
+            mass:85,
+            height:1.75,
+            caclBMI : function(){
+                this.johnBMI = this.mass/(this.height*this.height);
+            }
+        };
+        mark.caclBMI();
+        john.caclBMI();
+        console.log(mark);
+        console.log(john);
+
+        if(mark.markBMI > john.johnBMI)
+        {
+            document.write("The calculated BMI of "+mark.name+" 's is the highest between them<br>")
+        }
+        else 
+        {
+            document.write("The calculated BMI of "+john.name+" 's is the highest between them<br>")
+        }
+    </script>
+</body>
+</html>

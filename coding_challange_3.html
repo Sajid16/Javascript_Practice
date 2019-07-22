@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coding Challange-3</title>
+</head>
+<body>
+
+    <script>
+        var i,tips = [], final_amount = [];
+        var bills = [124,48,268];
+
+        for(i=0; i<bills.length; i++)
+        {
+            // document.write(bills[i])
+            if(bills[i]<50)
+            {
+                tips[i] = (20/100)*bills[i];
+                final_amount[i] = (tips[i]+bills[i]);
+            }
+            else if(bills[i]>=50 && bills[i]<=200)
+            {
+                tips[i] = (15/100)*bills[i];
+                final_amount[i] = (tips[i]+bills[i]);
+            }
+            else
+            {
+                tips[i] = (10/100)*bills[i];
+                final_amount[i]= (tips[i]+bills[i]); 
+            }
+        }
+
+        document.write("The list of the tips is:"+"<br>")
+        for(i=0; i<tips.length; i++)
+        {
+            document.write(tips[i]+"<br>")
+        }
+
+        document.write("The list of the final amount is:"+"<br>")
+        for(i=0; i<tips.length; i++)
+        {
+            document.write(final_amount[i]+"<br>")
+        }
+
+        console.log(tips);
+        console.log(final_amount);
+    </script>
+    
+</body>
+</html>

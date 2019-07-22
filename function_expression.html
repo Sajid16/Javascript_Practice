@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Function Expression Practice</title>
+</head>
+
+<body>
+
+    <script>
+        var whattodo = function (job, name) {
+            switch (job) {
+                case 'teacher':
+                    return name+" teaches us how to code"+"<br>";
+                case 'driver':
+                    return name+" drives cab in spain"+"<br>";
+                case 'designer':
+                    return name+" design beautiful websites"+"<br>";
+                default:
+                    return name+" does something else"+"<br>";
+            }
+
+        }
+
+        var result  = whattodo('driver', 'sajid');
+        var result1  = whattodo('teacher', 'anika');
+        var result2  = whattodo('designer', 'istiak');
+        var result3  = whattodo('engineer', 'borhan');
+
+        document.write(result);
+        document.write(result1);
+        document.write(result2);
+        document.write(result3);
+
+    </script>
+
+</body>
+
+</html>

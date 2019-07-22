@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>function practice</title>
+</head>
+<body>
+
+    <script>
+    function calculateage(birthyear)
+    {
+        return 2019 - birthyear;
+    }      
+
+    // var age = calculateage(1995);
+    // document.write(age)
+
+    function myretirement(year, name)
+    {
+        var age = calculateage(year);
+        var retire = 65-age;
+        if(age>0)
+        {
+            document.write(name+"'s"+" retirement age is "+retire+"<br>");
+        }
+        else if(age<0)
+        {
+            document.write(name+"'s"+" retirement age is none"+"<br>");
+        }
+        else
+        {
+            document.write("this is "+name+"'s"+" birth year"+"<br>");
+        }
+        
+    }
+    myretirement(2028, 'sajid');
+    myretirement(2012, 'anika');
+    myretirement(1992, 'istiak');
+    
+    </script>
+    
+</body>
+</html>
