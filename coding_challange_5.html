@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coding Challenge-5</title>
+</head>
+
+<body>
+    <script>
+        var i = 0;
+        var tip_bill_john = {
+            bill: [124, 48, 268, 180, 42],
+            calctip_bill: function () {
+
+                this.tip = [];
+                this.final_amount = [];
+                for (i = 0; i < tip_bill_john.bill.length; i++) {
+                    if (tip_bill_john.bill[i] < 50) {
+                        this.tip[i] = (20 / 100) * tip_bill_john.bill[i];
+                        this.final_amount[i] = this.tip[i] + tip_bill_john.bill[i];
+                        // document.write(tip[i] + "<br>");
+                    }
+                    else if (tip_bill_john.bill[i] >= 50 && tip_bill_john.bill[i] <= 200) {
+                        this.tip[i] = (15 / 100) * tip_bill_john.bill[i];
+                        this.final_amount[i] = this.tip[i] + tip_bill_john.bill[i];
+                        // document.write(tip[i] + "<br>");
+                    }
+                    else {
+                        this.tip[i] = (10 / 100) * tip_bill_john.bill[i];
+                        this.final_amount[i] = this.tip[i] + tip_bill_john.bill[i];
+                        // document.write(tip[i] + "<br>");
+                    }
+                }
+            }
+        };
+
+        tip_bill_john.calctip_bill();
+        console.log(tip_bill_john);
+
+        var tip_bill_mark = {
+            bill: [77, 475, 110, 45],
+            calctip_bill: function () {
+
+                this.tip = [];
+                this.final_tip = 0;
+                this.final_amount = [];
+                for (i = 0; i < tip_bill_mark.bill.length; i++) {
+                    if (tip_bill_mark.bill[i] < 100) {
+                        this.tip[i] = (20 / 100) * tip_bill_mark.bill[i];
+                        this.final_tip = this.final_tip + this.tip[i];
+                        this.final_amount[i] = this.tip[i] + tip_bill_mark.bill[i];
+                        // document.write(tip[i] + "<br>");
+                    }
+                    else if (tip_bill_mark.bill[i] >= 100 && tip_bill_mark.bill[i] <= 300) {
+                        this.tip[i] = (10 / 100) * tip_bill_mark.bill[i];
+                        this.final_tip = this.final_tip + this.tip[i];
+                        this.final_amount[i] = this.tip[i] + tip_bill_mark.bill[i];
+                        // document.write(tip[i] + "<br>");
+                    }
+                    else {
+                        this.tip[i] = (25 / 100) * tip_bill_mark.bill[i];
+                        this.final_tip = this.final_tip + this.tip[i];
+                        this.final_amount[i] = this.tip[i] + tip_bill_mark.bill[i];
+                        // document.write(tip[i] + "<br>");
+                    }
+                }
+            },
+            calc_avg_tip: function () {
+                this.avg_tip = tip_bill_mark.final_tip / tip_bill_mark.tip.length;
+            }
+        };
+
+        tip_bill_mark.calctip_bill();
+        tip_bill_mark.calc_avg_tip();
+        console.log(tip_bill_mark);
+        // avg_tip = tip_bill_mark.final_tip / tip_bill_mark.tip.length;
+        // console.log(avg_tip);
+
+    </script>
+
+</body>
+
+</html>
