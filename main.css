@@ -1,0 +1,8 @@
+.find_prime{
+    padding: 2% 2% 2% 2%;
+    background-color: #C0C0C0;
+}
+
+#prime_result{
+    font-weight: bold; 
+}
