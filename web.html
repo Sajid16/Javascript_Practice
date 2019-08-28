@@ -14,15 +14,29 @@
     <section>
         <div class="container" style="padding-top: 3%">
             <div class="row">
-                <div class="col-sm-12 col-lg-4 find_prime">
-                    <strong>the number is prime or not:</strong><input type="text" id="num1" class="form-control" style="margin-bottom: 2%">
-                    <button type="button" class="btn btn-success" onclick="check_prime()" style="margin-bottom: 2%">Check</button>
+                <div class="col-sm-11 col-lg-3 find_prime">
+                    <strong>Check the number is prime or not:</strong><input type="text" id="num1" class="form-control"
+                        style="margin-bottom: 2%">
+                    <button type="button" class="btn btn-success" onclick="check_prime()"
+                        style="margin-bottom: 3%">Check</button>
                     <p id="prime_result"></p>
                 </div>
-                <div class="col-sm-12 col-lg-4">
-                    One of three columns
+                <div class="col-sm-1 col-lg-1">
+
                 </div>
-                <div class="col-sm-12 col-lg-4">
+                <div class="col-sm-11 col-lg-3 find_prime">
+                    <strong>Find the prime numbers within a range:</strong>
+                    <input type="text" id="num1" class="form-control" style="margin-bottom: 2%">
+                    <input type="text" id="num2" class="form-control" style="margin-bottom: 2%">
+                    <button type="button" class="btn btn-success" onclick="find_prime_in_range()"
+                        style="margin-bottom: 3%">Check</button>
+                    <p id="message"></p>
+                    <p id="prime_result_range"></p>
+                </div>
+                <div class="col-sm-1 col-lg-1">
+
+                    </div>
+                <div class="col-sm-11 col-lg-3">
                     One of three columns
                 </div>
             </div>
