@@ -21,8 +21,8 @@ function check_prime() {
 function find_prime_in_range() {
     var num1, c, d = 0, prime = [];
     var msg = "The prime numbers within the given range are ";
-    num1 = document.getElementById("num1").value;
-    num2 = document.getElementById("num2").value;
+    num1 = document.getElementById("range_num1").value;
+    num2 = document.getElementById("range_num2").value;
     // console.log(num1)
     document.getElementById("message").innerHTML = msg;
     for (var j = num1; j <= num2; j++) {
