@@ -19,16 +19,17 @@ function check_prime() {
 }
 
 function find_prime_in_range() {
-    var num1, c, d = 0, prime = [];
-    var msg = "The prime numbers within the given range are ";
-    num1 = document.getElementById("range_num1").value;
-    num2 = document.getElementById("range_num2").value;
-    // console.log(num1)
     document.getElementById("message").innerHTML = msg;
-    for (var j = num1; j <= num2; j++) {
+    var range_num1,range_num2, c, d = 0, prime = [];
+    var msg = "The prime numbers within the given range are ";
+    range_num1 = document.getElementById("range_num1").value;
+    range_num2 = document.getElementById("range_num2").value;
+    // console.log(range_num1, range_num2)
+    for (var j = range_num1; j <= range_num2; j++) {
         c = 0;
         for (var i = 2; i <= j / 2; i++) {
-            if (j % i == 0) {
+            console.log(j)
+            if (j % i === 0 && j !== i) {
                 c++;
                 break;
             }
