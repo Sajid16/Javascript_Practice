@@ -24,7 +24,9 @@ function find_prime_in_range() {
     range_num1 = document.getElementById("range_num1").value;
     range_num2 = document.getElementById("range_num2").value;
     document.getElementById("message").innerHTML = msg;
+    console.log('here');
     for (var j = range_num1; j <= range_num2; j++) {
+        console.log('here1');
         c = 0;
         for (var i = 2; i <= j / 2; i++) {
             if (j % i == 0) {
@@ -41,7 +43,7 @@ function find_prime_in_range() {
     var temp = "";
     for (var i = 0; i < prime.length; i++) {
         temp += prime[i] + ' ';
-        // console.log(prime[i])
+        console.log(prime[i])
     }
     document.getElementById("prime_result_range").innerHTML = temp;
 }
